@@ -1,0 +1,107 @@
+.img-road{
+    width: 100%;
+    position: relative;
+}
+
+/* .parentblock{
+position: relative;
+} */
+.busimg{
+    position: absolute;
+    top: 450px;
+    right: 300px;
+    width: 300px;
+    z-index: 5;
+    /* animation: busmove 10s ease-in 0s infinite; */
+
+}
+.home-img{ 
+    position: absolute;
+    top: 150px;
+    left: 70px;
+    animation: home 6s ease-in 0s infinite ;
+}
+.tree-img{
+    width: 250px;
+    position: absolute;
+    top: 200px;
+    left: 0px;
+    animation: tree02 6s ease-in 0s infinite ;
+    z-index: 1;
+}
+.birds-img{
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 150px;
+    /* animation-name: birdsmove;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in; */
+    animation: birdsmove 15s ease-in 0s infinite ;
+    z-index: 3;
+    
+}
+/* .tree02-img{
+    position: absolute;
+    top: 250px;
+    left: 0;
+    width: 250px;
+    animation: tree 10s ease-in 0s infinite ;
+} */
+.sun-img{ 
+    width: 100px;
+    position: absolute;
+    top: 50px;
+    left: 80px;
+    animation: sun 40s ease-in 0s infinite ;
+
+}
+.cloud-img{
+    width: 200px;
+    position: absolute;
+    top: 20px;
+    left: 80px;
+    animation: cloud 30s ease-in 0s infinite ;
+    z-index: 2;
+}
+/* kayframes  */
+@keyframes birdsmove{
+    from {right: 0px;}
+  to {right: 1500px;}
+  50% { top: 30px;}
+}
+  /* 0% { right: 0; }
+  20% { right: 100px; }
+  30px { right: 400px; }
+  50px { right: 600px; }
+  70px { right: 900px; }
+  80px { right: 1200px; }
+  100px { right: 1500px; } */
+
+/* @keyframes tree{ 
+    from {left: 0px;}
+    to {left: 1500px;}
+} */
+/* @keyframes busmove{
+    from { right: 0px;}
+    to { right: 1200px;}
+} */
+@keyframes tree02{
+    from{ left: 0px;}
+    to { left: 1500px;}
+  }
+  @keyframes cloud{
+    from { left: 80px;}
+    to { left: 1200px;}
+    /* 20% {top: 20px; } */
+  }
+  @keyframes sun { 
+    from { left: 80px;}
+    to { left: 120px;}
+    50% { top: 50px;}
+  }
+  @keyframes home {
+    from { left: 100px;}
+    to { left: 1500px;}
+  }
